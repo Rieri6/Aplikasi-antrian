@@ -60,9 +60,7 @@ if(!isset($_SESSION['username'])) {
                 </ul>
             </div>
             <div class="col-md-6">
-                <h3>Petunjuk Penggunaan</h3>
-                <p>Gunakan menu navigasi di atas untuk mengakses fitur yang tersedia. Pastikan data yang dimasukkan sudah benar untuk menghindari kesalahan pengolahan antrian.</p>
-                <p>Jika ada kendala, silakan hubungi admin sistem untuk bantuan lebih lanjut.</p>
+            <h4>Silahkan berobat</h4>
             </div>
         </div>
     </div>

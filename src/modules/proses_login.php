@@ -18,7 +18,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         $_SESSION['username'] = $user['username'];
         header("Location: ../../index.php");
     } else {
-        echo "</script>alert('Login gagal! Username atau Password salah'); window.location.href='login.php';</script>";
+        echo "<script>alert('Login gagal! Username atau Password salah'); window.location.href='../../login.php';</script>";
     }
 }
 

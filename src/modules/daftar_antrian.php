@@ -36,16 +36,16 @@ $antrian = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <?php
                 if(count($antrian) > 0) {
                     $no = 1;
-                    foreach($antrian as $row) {
+                    foreach($antrian as $antr) {
                         echo "<tr>
                                 <td class='text-center'>".$no."</td>
-                                <td>".$row["nama_pasien"]."</td>
-                                <td class='text-center'>".$row["nomor_antrian"]."</td>
-                                <td>".$row["waktu_kedatangan"]."</td>
-                                <td class='text-center'>".$row["status"]."</td>
+                                <td>".$antr["nama_pasien"]."</td>
+                                <td class='text-center'>".$antr["nomor_antrian"]."</td>
+                                <td>".$antr["waktu_kedatangan"]."</td>
+                                <td class='text-center'>".$antr["status"]."</td>
                                 <td class='text-center'>
-                                    <a href='ubah_status.php?id=".$row["id"]."' class='btn btn-warning btn-sm'>Ubah Status</a> 
-                                    <a href='hapus_antrian.php?id=".$row["id"]."' class='btn btn-danger btn-sm' onclick='return confirm(\"Yakin ingin menghapus?\")'>Hapus</a>
+                                    <a href='ubah_status.php?id=".$antr["id"]."' class='btn btn-warning btn-sm'>Ubah Status</a> 
+                                    <a href='hapus_antrian.php?id=".$antr["id"]."' class='btn btn-danger btn-sm' onclick='return confirm(\"Yakin ingin menghapus?\")'>Hapus</a>
                                 </td>
                             </tr>
                             ";
